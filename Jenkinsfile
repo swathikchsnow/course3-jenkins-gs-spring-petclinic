@@ -2,16 +2,16 @@ pipeline {
     agent any
     
     stages {
-        stage("checkout") {
-            steps {
-                script {
-                    echo "Checking out code"
-                    git branch: 'main', url: 'https://github.com/swathikchsnow/course3-jenkins-gs-spring-petclinic.git'
-                    echo "List files after checkout"
-                    sh "ls"
-                }
-            }
-        }
+        // stage("checkout") {
+        //     steps {
+        //         script {
+        //             echo "Checking out code"
+        //             git branch: 'main', url: 'https://github.com/swathikchsnow/course3-jenkins-gs-spring-petclinic.git'
+        //             echo "List files after checkout"
+        //             sh "ls"
+        //         }
+        //     }
+        // }
         
         stage("build") {
             steps {
